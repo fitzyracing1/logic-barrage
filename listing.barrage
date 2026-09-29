@@ -1,0 +1,43 @@
+# logic
+
+> 3XB logic-gate boilerplate for Super MCP: local economics gates powered by web entity intelligence. Ties Super to 3XB for community-lending / CDFI-style policy engines.
+
+## Purpose
+Explain logic as gates that decide yes/no for a local lending policy using 3XB entities. Source: fitzyracing1/logic.
+
+## How it works (plain English)
+1. Name a local economics rule.
+2. Turn it into a gate.
+3. Feed the gate with 3XB entity intelligence.
+4. Connect that gate to Super MCP.
+
+## Key ideas
+- Logic gate (a yes/no door)
+- 3XB (web entity intelligence)
+- Community lending / CDFI-style policy
+
+## The actual code
+```
+# source: fitzyracing1/logic
+rule = define_gate()
+entities = ask_3xb()
+decide = rule(entities)
+```
+
+## Line-by-line translation
+1. define_gate() → “write the yes/no rule”
+2. ask_3xb() → “get entity facts”
+3. rule(entities) → “open or close the gate”
+
+## Decisions the program makes
+- If the entities fail the rule → gate closed
+- If they pass → gate open
+
+## What a person would notice
+A policy door, not a bank website.
+
+## Current status
+Barrage clone.
+
+## Next possible steps
+Open the source and define one gate.
